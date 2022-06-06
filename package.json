@@ -1,0 +1,19 @@
+{
+  "name": "cricketscores",
+  "version": "1.0.0",
+  "description": "provides live cricket scores in real time",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackawara/criccketScores.git"
+  },
+  "author": "mac kawara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mackawara/criccketScores/issues"
+  },
+  "homepage": "https://github.com/mackawara/criccketScores#readme"
+}
