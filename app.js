@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const PORT = process.env.PORT || 5007;
-const fetch = require("node-fetch");
+//const fetch = import("node-fetch");
+const { json } = require("express/lib/response");
 const rapidapiKEY = process.env.RAPIDAPIKEY;
 const rapidapiHOST = process.env.RAPIDAPIHOST;
 
@@ -29,5 +30,5 @@ app.get("/", (req, res) => {
     .then((res) => res.json())
     .then((json) => console.log(json))
     .catch((err) => console.error("error:" + err));
-  res.sendStatus("200").send("SUCCESSFULY");
+  res.sendStatus("200").send(`${json}`);
 });
